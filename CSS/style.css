@@ -9,6 +9,7 @@
 header{
     background-color: hsl(217, 28%, 15%);
     padding: 20px;
+    width: 100%;
 }
 
 .nav-container{
@@ -47,6 +48,7 @@ header{
 
 .container{
     height: 50vh;
+    width: 100%;
     background: url("/Img/pexels-g-cortez-6419779.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -70,10 +72,61 @@ header{
 }
 
 .button{
-    display: inline-block;
+    display: inline-flex;
     font-size: 1.3rem;
     color: #fff;
     padding: 20px 80px;
     background-color: blueviolet;
     border-radius: 8px;
+}
+
+
+@media (max-width: 900px){
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .loren{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .toggle{
+        display: block;
+    }
+
+    .nav-ul{
+        position: absolute;
+        top: -200%;
+        right: 0px;
+        width: 70%;
+        transition: .6s all;
+    }
+
+    .nav-ul.show{
+        top: 100px;
+        background-color: hsl(217, 28%, 15%);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button{
+        padding: 15px 60px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .title{
+        font-size: 2rem;
+    }
+
+    .loren{
+        font-size: 1rem;
+    }
+
+    .button{
+        padding: 10px 40px;
+    }
 }
