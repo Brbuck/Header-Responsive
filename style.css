@@ -90,7 +90,7 @@ header{
     background-color: blueviolet;
     border: 1px solid #fff;
     border-radius: 8px;
-    transition: .6s ;
+    transition: all ease .5s ;
 }
 
 .button:hover{
